@@ -1,0 +1,130 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #18233e; background: #fff; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; }
+.navbar { max-width: 1240px; margin: auto; min-height: 82px; padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.logo { font-size: 27px; letter-spacing: -1.5px; font-weight: 500; }
+.logo span { color: #192744; }
+.logo b, .phone-brand b { color: #5278f6; }
+.nav-links { display: flex; align-items: center; gap: 27px; font-size: 13px; color: #46516a; }
+.nav-links a:hover, .footer-links a:hover { color: #5278f6; }
+.primary-btn, .secondary-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 19px; border-radius: 9px; font-weight: 600; font-size: 13px; transition: .2s; }
+.primary-btn { background: #5278f6; color: white; box-shadow: 0 6px 15px #5278f626; }
+.primary-btn:hover { background: #355de1; transform: translateY(-1px); }
+.secondary-btn { background: white; border: 1px solid #e2e7f0; color: #273550; }
+.menu-toggle { display: none; border: 0; background: white; font-size: 24px; }
+.hero { max-width: 1240px; min-height: 490px; margin: auto; padding: 65px 45px 55px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 25px; overflow: hidden; background: radial-gradient(ellipse at 75% 40%, #e7eaff 0, #f5f6ff 35%, #fff 70%); border-radius: 20px; }
+.eyebrow { display: inline-block; color: #5278f6; font-size: 10px; font-weight: 800; letter-spacing: 1.6px; margin-bottom: 18px; }
+.hero h1 { font-size: clamp(35px, 4vw, 53px); letter-spacing: -2px; line-height: 1.12; margin: 0 0 20px; }
+.hero h1 span, .section h2 span, .resume-section h2 span, .app-section h2 span, .split-section h2 span { color: #5278f6; }
+.hero-copy > p, .section-heading p, .resume-section > div > p, .split-section > div > p, .app-section > div > p { color: #7a8498; font-size: 14px; line-height: 1.9; max-width: 440px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 25px 0; }
+.trust { font-size: 11px; color: #788198; }
+.trust span { color: #ffb547; letter-spacing: 2px; margin-right: 8px; }
+.hero-cards { min-height: 350px; position: relative; display: flex; align-items: center; justify-content: center; }
+.floating-card { position: absolute; z-index: 1; background: #fff; border: 1px solid #edf0f7; box-shadow: 0 18px 55px #3a4b7715; border-radius: 15px; padding: 20px; }
+.card-one { width: 235px; left: 5%; top: 20px; transform: rotate(-4deg); }
+.card-two { width: 240px; right: 2%; top: 95px; transform: rotate(4deg); }
+.card-three { width: 290px; bottom: 8px; left: 13%; display: flex; gap: 12px; align-items: center; }
+.floating-card h3 { font-size: 17px; line-height: 1.4; margin: 14px 0 8px; }
+.floating-card p { color: #7a8498; font-size: 11px; line-height: 1.7; margin: 5px 0 12px; }
+.floating-card small { font-size: 10px; color: #7a8498; }
+.card-top, .job-company { display: flex; justify-content: space-between; align-items: center; }
+.round-icon { display: inline-flex; width: 34px; height: 34px; border-radius: 10px; align-items: center; justify-content: center; }
+.purple { background: #eee9ff; color: #8058e8; }
+.blue { background: #e6edff; color: #5278f6; }
+.tag { background: #eef2ff; color: #5278f6; border-radius: 20px; padding: 6px 9px; font-size: 9px; font-weight: 700; }
+.mini-avatars { display: flex; align-items: center; gap: 4px; font-size: 9px; color: #7a8498; }
+.mini-avatars i { display: grid; place-items: center; width: 23px; height: 23px; background: #e7eaff; border-radius: 50%; font-style: normal; color: #5267a4; }
+.mini-avatars span { margin-left: 5px; }
+.progress { height: 5px; border-radius: 8px; background: #edf0f7; margin: 16px 0 8px; }
+.progress span { display: block; width: 85%; height: 100%; background: #5278f6; border-radius: 8px; }
+.card-two small b { float: right; color: #5278f6; }
+.company-mark, .company-logo { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 11px; background: #e5efff; color: #3273df; font-weight: 800; }
+.card-three b { font-size: 11px; }
+.card-three p { margin: 5px 0; }
+.hero-orb { position: absolute; right: 2%; bottom: 3%; color: #9c8bf5; font-size: 35px; }
+.stats { max-width: 1080px; margin: auto; padding: 45px 25px; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; border-bottom: 1px solid #edf0f7; }
+.stats h2 { font-size: 29px; margin: 0 0 9px; letter-spacing: -1px; }
+.stats p { color: #858da0; font-size: 11px; margin: 0; }
+.partners { padding: 35px 20px 60px; text-align: center; }
+.partners > p { color: #9aa1b1; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
+.partner-logos { display: flex; justify-content: center; flex-wrap: wrap; gap: clamp(25px, 6vw, 75px); margin-top: 28px; color: #8992a5; font-size: 20px; }
+.section { max-width: 1160px; margin: auto; padding: 65px 30px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; }
+.section h2, .resume-section h2, .app-section h2 { font-size: clamp(28px, 3.2vw, 40px); letter-spacing: -1.4px; line-height: 1.2; margin: 0 0 12px; }
+.section-heading p { margin-top: 0; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 30px 0 22px; }
+.filters button { border: 1px solid #e6eaf2; background: white; border-radius: 8px; padding: 10px 15px; color: #69758c; font-size: 11px; }
+.filters button.selected { background: #5278f6; color: white; border-color: #5278f6; }
+.job-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.job-card { border: 1px solid #e9edf5; border-radius: 14px; padding: 22px; transition: .2s; }
+.job-card:hover { box-shadow: 0 12px 30px #24365b0c; transform: translateY(-3px); }
+.job-card h3 { font-size: 16px; margin: 24px 0 8px; }
+.job-card > p { color: #81899b; font-size: 12px; }
+.job-bottom { display: flex; justify-content: space-between; gap: 8px; border-top: 1px solid #edf0f6; padding-top: 17px; margin-top: 22px; color: #8a92a4; font-size: 10px; }
+.job-bottom a { color: #5278f6; font-weight: 700; }
+.resume-section, .app-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; padding: 65px max(7%, calc((100% - 1080px)/2)); background: #f4f6ff; margin: 30px 0; }
+.resume-preview { background: white; border: 1px solid #e7eafb; padding: 28px; border-radius: 17px; box-shadow: 0 20px 50px #384b7610; }
+.resume-head { display: flex; gap: 13px; align-items: center; margin-bottom: 30px; }
+.resume-head b, .resume-score b { font-size: 13px; }
+.resume-head p, .resume-score p { font-size: 11px; color: #8a92a4; margin: 6px 0 0; }
+.resume-line { width: 65%; height: 8px; background: #eef1f8; border-radius: 6px; margin: 13px 0; }
+.resume-line.long { width: 90%; }
+.resume-line.medium { width: 45%; }
+.resume-score { display: flex; gap: 14px; align-items: center; border-top: 1px solid #edf0f7; padding-top: 23px; margin-top: 25px; }
+.score-circle { display: grid; place-items: center; width: 58px; height: 58px; border: 5px solid #8d7cf0; border-radius: 50%; font-size: 12px; font-weight: 800; }
+.split-section { display: flex; align-items: center; gap: 35px; padding-top: 65px; padding-bottom: 65px; }
+.split-icon { display: grid; place-items: center; min-width: 110px; height: 110px; background: #eff2ff; border-radius: 25px; font-size: 42px; }
+.employer .split-icon { background: #eaf9f5; }
+.split-section h2 { font-size: 33px; }
+.app-section { background: linear-gradient(120deg, #f0f3ff, #f9f5ff); overflow: hidden; }
+.phone { max-width: 270px; width: 100%; justify-self: center; background: white; padding: 23px 17px; border: 7px solid #26324d; border-radius: 32px; box-shadow: 0 22px 50px #28365724; }
+.phone-speaker { width: 70px; height: 5px; border-radius: 5px; background: #26324d; margin: -11px auto 22px; }
+.phone-brand { font-size: 17px; margin-bottom: 22px; }
+.phone > p { font-size: 12px; color: #7e879a; }
+.phone h3 { font-size: 20px; line-height: 1.3; }
+.phone-job { padding: 14px 11px; margin-top: 13px; border: 1px solid #e7eaf2; border-radius: 11px; }
+.phone-job b { font-size: 11px; }
+.phone-job p { font-size: 10px; color: #8a92a4; }
+.phone-job span { font-size: 10px; color: #5278f6; }
+.support { text-align: center; padding: 65px 20px; }
+.support h2 { font-size: 27px; letter-spacing: -1px; }
+.support p { color: #81899b; font-size: 13px; margin: 12px 0 24px; }
+footer { border-top: 1px solid #edf0f7; text-align: center; padding: 35px 20px; }
+footer > p { color: #8992a5; font-size: 12px; }
+.footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 25px; margin: 25px 0; color: #667187; font-size: 11px; }
+footer small { color: #9aa1b1; font-size: 10px; }
+@media (max-width: 850px) {
+  .navbar { flex-wrap: wrap; }
+  .menu-toggle { display: block; }
+  .nav-links { display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 15px; padding: 15px 0; }
+  .nav-links.open { display: flex; }
+  .hero { grid-template-columns: 1fr; padding: 45px 25px; }
+  .hero-cards { min-height: 360px; }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .section-heading { align-items: start; flex-direction: column; }
+  .job-grid { grid-template-columns: repeat(2, 1fr); }
+  .resume-section, .app-section { grid-template-columns: 1fr; padding: 50px 25px; gap: 35px; }
+}
+@media (max-width: 520px) {
+  .navbar { padding: 17px 20px; }
+  .hero { margin: 0 10px; padding: 40px 18px 20px; }
+  .hero h1 { font-size: 36px; }
+  .hero-cards { min-height: 340px; transform: scale(.88); transform-origin: center center; margin: 0 -20px; }
+  .card-one { left: 0; }
+  .card-two { right: 0; }
+  .card-three { left: 6%; }
+  .stats { padding: 35px 12px; }
+  .stats h2 { font-size: 25px; }
+  .partners { padding-bottom: 35px; }
+  .partner-logos { font-size: 16px; gap: 20px; }
+  .section { padding: 45px 20px; }
+  .job-grid { grid-template-columns: 1fr; }
+  .filters { gap: 7px; }
+  .filters button { padding: 9px 11px; }
+  .split-section { align-items: start; flex-direction: column; gap: 20px; }
+  .split-section h2 { font-size: 29px; }
+  .app-section h2 { font-size: 31px; }
+}
